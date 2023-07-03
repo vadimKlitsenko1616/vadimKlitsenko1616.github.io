@@ -1,0 +1,18 @@
+.user {
+  transform: translateY(-5%);
+
+  &__image {
+    width: 270px;
+    height: 270px;
+  }
+
+  &__title {
+    margin: 30px 0 15px;
+    font-size: 38px;
+  }
+
+  &__caption {
+    font-size: 15px;
+    padding: 0 10%;
+  }
+}

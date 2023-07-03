@@ -1,0 +1,100 @@
+@import "variables";
+
+*::selection {
+  background-color: $color-yellow;
+  color: $color-white;
+}
+
+body, ul, li, picture, button, figure, figcaption, form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $color-black;
+  font-family: 'Poppins', sans-serif;
+  color: $color-white;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+hr {
+  display: none;
+}
+
+.color-black {
+  background-color: $color-black;
+}
+
+.color-white {
+  background-color: $color-white;
+}
+
+.color-yellow {
+  color: $color-yellow;
+}
+
+.color-mockito {
+  color: $color-mockito;
+}
+
+.bgc-black {
+  background-color: $color-black;
+}
+
+.bgc-white {
+  background-color: $color-white;
+}
+
+.bgc-yellow {
+  background-color: $color-yellow;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 15px 15vh;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.section-title {
+  position: relative;
+  margin: 40px 0 40px;
+  font-size: 32px;
+  text-transform: uppercase;
+
+  &::after {
+    content: "summary";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    z-index: -1;
+    opacity: .5;
+    text-transform: uppercase;
+    color: $color-grey-light;
+    font-size: 36px;
+    letter-spacing: 3px;
+  }
+}
+
+.title {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}

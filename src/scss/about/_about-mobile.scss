@@ -1,0 +1,31 @@
+@import "../variables";
+@import "personal-infos-mobile";
+@import "achievements-mobile";
+@import "skills-mobile";
+@import "experience-mobile";
+
+.about {
+  margin-bottom: 80px;
+
+  &__container {
+    .title {
+      margin: 40px 0;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .button {
+      margin: 50px 0;
+      align-self: center;
+    }
+  }
+  .user__image {
+    align-self: center;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../variables";
+@import "personal-infos-tablet";
+@import "achievments-tablet";
+@import "skills-tablet";
+@import "experience-tablet";
+
+.about {
+  &__container .button {
+    align-self: flex-start;
+  }
+
+  .user__image {
+    display: none;
+  }
+}

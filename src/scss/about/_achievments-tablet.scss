@@ -1,0 +1,23 @@
+.achievements {
+  grid-column-gap: 40px;
+  grid-row-gap: 35px;
+
+  &__number {
+    font-size: 50px;
+  }
+
+  &__text {
+    position: relative;
+    padding-left: 45px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 35px;
+      height: 1px;
+      background-color: #777;
+    }
+  }
+}

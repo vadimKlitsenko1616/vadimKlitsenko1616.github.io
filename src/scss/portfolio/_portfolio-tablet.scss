@@ -1,0 +1,25 @@
+@import "../variables";
+
+.portfolio {
+  grid-row-gap: 80px;
+
+  .card {
+    height: calc(70vw - 30px);
+
+    &__title {
+      font-size: 36px;
+      color: $color-yellow;
+      border-color: $color-yellow;
+    }
+
+    &__description {
+      box-sizing: border-box;
+      padding-right: 30%;
+      font-size: 20px;
+    }
+
+    &__image {
+      transform: translate(35%, 39%) scale(1.5);
+    }
+  }
+}

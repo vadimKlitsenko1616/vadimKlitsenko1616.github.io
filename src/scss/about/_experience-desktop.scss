@@ -1,0 +1,9 @@
+@import "../variables";
+
+.experience {
+
+  &__title a {
+    color: $color-yellow;
+    text-decoration: none;
+  }
+}

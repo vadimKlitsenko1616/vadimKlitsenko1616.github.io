@@ -1,0 +1,58 @@
+@import "skills-desktop";
+@import "experience-desktop";
+
+.about {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 50px 20px;
+  max-width: 1200px;
+
+  .section-title {
+    margin-bottom: 100px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: max-content;
+    grid-gap: 30px;
+  }
+
+  .title {
+    grid-column: 1/2;
+    margin: 0;
+  }
+  .personal-infos {
+    grid-column: 1/2;
+  }
+  .button {
+    grid-column: 1/2;
+    width: fit-content;
+  }
+  .achievements {
+    grid-column: 2/3;
+    grid-row: 1/6;
+  }
+
+  .skills {
+    .title, &__list {
+      grid-column: 1/3;
+    }
+  }
+
+  .experience {
+    .title {
+      grid-column: 1/2;
+    }
+    &__list {
+      grid-column: 1/2;
+    }
+    .education-title {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    &__list_reverse {
+      grid-column: 2/3;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../variables";
+
+.navigation {
+
+  &__list {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  &__button {
+    height: 45px;
+    width: 45px;
+  }
+}

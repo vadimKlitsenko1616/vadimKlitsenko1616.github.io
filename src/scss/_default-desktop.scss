@@ -1,0 +1,21 @@
+.container {
+  padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,li {
+  cursor: default;
+}
+
+.section-title {
+  cursor: default;
+  font-size: 56px;
+
+  &::after {
+    font-size: 100px;
+    transform: translateY(-22%);
+  }
+}
+
+.section {
+  min-height: auto;
+}

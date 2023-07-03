@@ -1,0 +1,16 @@
+.skills {
+
+  &__list {
+    grid-row-gap: 40px;
+  }
+
+  &__item {
+    gap: 20px;
+    font-size: 16px;
+
+    & > span {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}

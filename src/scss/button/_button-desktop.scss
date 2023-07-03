@@ -1,0 +1,24 @@
+@import "../variables";
+
+.button {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover .button_bg {
+    max-width: 100%;
+  }
+
+  &_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    max-width: 0;
+    height: 100%;
+    background-color: $color-yellow;
+    transition: max-width .3s ease-out;
+  }
+}

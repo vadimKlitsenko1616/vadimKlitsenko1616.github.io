@@ -1,0 +1,22 @@
+.personal-infos {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+
+  &__item {
+    flex-direction: row;
+
+    span {
+      margin-left: 5px;
+    }
+  }
+
+  &__email {
+    flex-direction: row;
+
+    span {
+      margin-left: 0;
+      font-size: 15px;
+    }
+  }
+}
