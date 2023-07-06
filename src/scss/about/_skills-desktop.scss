@@ -1,7 +1,13 @@
 .skills {
 
   &__list {
+    grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
+    max-height: 100%;
+
+    &::before, &::after {
+      display: none;
+    }
   }
 
   &__item {
@@ -9,8 +15,7 @@
     font-size: 16px;
 
     & > span {
-      width: 120px;
-      height: 120px;
+
     }
   }
 }
