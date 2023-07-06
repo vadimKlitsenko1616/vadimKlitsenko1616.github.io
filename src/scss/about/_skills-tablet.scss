@@ -5,5 +5,12 @@
 
   &__list {
     grid-template-columns: repeat(4, 1fr);
+    max-height: 320px;
+    transition: max-height 1s, height 1s;
+
+    &_active {
+      max-height: 100%;
+      transition: max-height 1s, height 1s;
+    }
   }
 }

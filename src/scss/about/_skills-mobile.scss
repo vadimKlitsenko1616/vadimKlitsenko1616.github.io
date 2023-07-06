@@ -1,13 +1,50 @@
 @import "../variables";
 
 .skills {
+
+  &__ficha {
+    display: grid;
+    grid-template-rows: 320px;
+    width: 100%;
+    transition: grid-template-rows 2s;
+
+    &:hover {
+      grid-template-rows: 1fr;
+    }
+
+    &_active {
+      grid-template-rows: 1fr;
+    }
+
+    .skills__list {
+      overflow: hidden;
+    }
+  }
+
   &__list {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 1fr;
+    grid-template-rows: 0fr;
     grid-column-gap: 10px;
     grid-row-gap: 25px;
     width: 100%;
+    transition: grid-template-rows 1s;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(to top, $color-black 0%, transparent 100%);
+    }
+
+    &_active {
+      grid-template-rows: 1fr;
+    }
   }
 
   &__item {
@@ -36,5 +73,14 @@
         width: 40%;
       }
     }
+  }
+
+  &__button {
+    margin: 40px 0;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-yellow;
   }
 }

@@ -1,9 +1,10 @@
 .experience {
-  .title:nth-child(1) {
+
+  .title {
     text-align: center;
   }
 
-  &__list {
-
+  &__description {
+    max-width: 65%;
   }
 }

@@ -20,7 +20,7 @@
     width: 11vw;
     border-radius: 50%;
     background-color: $color-grey-light;
-    transition: background-color .3s;
+    transition: background-color .1s;
 
     &_active {
       background-color: $color-yellow;

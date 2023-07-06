@@ -4,6 +4,8 @@
   grid-row-gap: 80px;
 
   .card {
+    justify-self: center;
+    width: 80vw;
     height: calc(70vw - 30px);
 
     &__title {

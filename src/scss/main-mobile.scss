@@ -8,3 +8,20 @@
 @import "navigation/navigation-mobile";
 @import "contact/contact-mobile";
 @import "form/form-mobile";
+
+
+.wall {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
+  background-color: $color-black;
+  transition: max-height .3s cubic-bezier(.77,0,.175,1);
+
+  &_hide {
+    background-color: $color-grey;
+    max-height: 0;
+  }
+}

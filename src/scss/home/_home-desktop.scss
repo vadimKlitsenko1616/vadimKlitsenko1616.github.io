@@ -5,15 +5,21 @@
   position: relative;
   padding: 0 86px 0 20px;
 
-  &::before {
+  .yellow-block {
     position: absolute;
-    content: "";
     bottom: 0;
     left: 0;
     z-index: -1;
     height: 130vh;
     width: 50%;
-    transform: rotate(-15deg) translateY(1%) translateX(-65%);
+    transform: rotate(-15deg) translateY(-100%) translateX(-65%);
     background-color: $color-yellow;
+    opacity: 0;
+    transition: transform 1.5s cubic-bezier(.77,0,.175,1), opacity .5s;
+
+    &_active {
+      opacity: 1;
+      transform: rotate(-15deg) translateY(1%) translateX(-65%);
+    }
   }
 }
