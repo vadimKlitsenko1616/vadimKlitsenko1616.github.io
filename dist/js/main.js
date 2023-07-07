@@ -54,7 +54,7 @@ skillsButton.addEventListener('click', () => {
         setTimeout(() => {
             skillsButton.classList.remove('skills__button_hidden')
         }, 400)
-        const section = document.getElementById('skills-container')
+        const section = document.getElementById('skills-title')
         section.scrollIntoView({behavior: 'smooth'})
     }
 })
