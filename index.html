@@ -16,6 +16,7 @@
             <div class="yellow-block" id="yellow-block"></div>
             <figure class="user">
                 <picture class="user__image" id="avatar-block">
+                    <source media="(max-width: 992px)" srcset="dist/img/avatar_mobile.jpeg" type="image/jpeg">
                     <img id="avatar" src="dist/img/avatar.jpeg" alt="">
                 </picture>
                 <figcaption class="user__caption" id="home-caption">
@@ -40,6 +41,7 @@
             <article class="about__container">
                 <h4 class="title">personal information</h4>
                 <picture class="user__image">
+                    <source media="(max-width: 992px)" srcset="dist/img/avatar_mobile.jpeg" type="image/jpeg">
                     <img src="dist/img/avatar.jpeg" alt="">
                 </picture>
                 <ul id="about-personal-info-list" class="personal-infos">
@@ -82,107 +84,108 @@
                 </ul>
             </article>
             <hr>
-            <article class="about__container skills">
+            <article id="skills-container" class="about__container skills">
                 <h4 class="title">my skills</h4>
                 <ul id="skills-list" class="skills__list">
                     <li class="skills__item">
-                        <span><img src="./dist/img/java.svg" alt=""></span>
+                        <span class="skills__item_six"><img src="./dist/img/java.svg" alt=""></span>
                         Java
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/springio.svg" alt=""></span>
+                        <span class="skills__item_six"><img src="./dist/img/springio.svg" alt=""></span>
                         Spring Boot
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/kubernetes.svg" alt=""></span>
+                        <span class="skills__item_three"><img src="./dist/img/kubernetes.svg" alt=""></span>
                         Kubernetes
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/docker.svg" alt=""></span>
+                        <span class="skills__item_five"><img src="./dist/img/docker.svg" alt=""></span>
                         Docker
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/kafka.svg" alt=""></span>
+                        <span class="skills__item_five"><img src="./dist/img/kafka.svg" alt=""></span>
                         Apache Kafka
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/grafana.svg" alt=""></span>
+                        <span class="skills__item_five"><img src="./dist/img/grafana.svg" alt=""></span>
                         Grafana
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/sql.svg" alt=""></span>
+                        <span class="skills__item_six"><img src="./dist/img/sql.svg" alt=""></span>
                         SQL
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/postgresql.svg" alt=""></span>
+                        <span class="skills__item_five"><img src="./dist/img/postgresql.svg" alt=""></span>
                         PostgreSQL
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/mongodb.svg" alt=""></span>
+                        <span class="skills__item_two"><img src="./dist/img/mongodb.svg" alt=""></span>
                         MongoDB
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/GCP.svg" alt=""></span>
+                        <span class="skills__item_five"><img src="./dist/img/GCP.svg" alt=""></span>
                         GCP
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/airflow.svg" alt=""></span>
+                        <span class="skills__item_two"><img src="./dist/img/airflow.svg" alt=""></span>
                         AirFlow
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/hibernate.svg" alt=""></span>
+                        <span class="skills__item_five"><img src="./dist/img/hibernate.svg" alt=""></span>
                         Hibernate
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/Liquibase.svg" alt=""></span>
+                        <span class="skills__item_five"><img src="./dist/img/Liquibase.svg" alt=""></span>
                         Liquibase
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/solid.svg" alt=""></span>
+                        <span class="skills__item_five"><img src="./dist/img/solid.svg" alt=""></span>
                         SOLID
                     </li>
                     <li class="skills__item">
-                        <span>ETL</span>
+                        <span class="skills__item_three">ETL</span>
                         ETL
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/scrum.svg" alt=""></span>
+                        <span class="skills__item_six"><img src="./dist/img/scrum.svg" alt=""></span>
                         Scrum
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/git.svg" alt=""></span>
+                        <span class="skills__item_six"><img src="./dist/img/git.svg" alt=""></span>
                         Git
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/maven.svg" alt=""></span>
+                        <span class="skills__item_six"><img src="./dist/img/maven.svg" alt=""></span>
                         Maven
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/jenkins.svg" alt=""></span>
+                        <span class="skills__item_four"><img src="./dist/img/jenkins.svg" alt=""></span>
                         Jenkins
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/JUnit.svg" alt=""></span>
+                        <span class="skills__item_six"><img src="./dist/img/JUnit.svg" alt=""></span>
                         JUnit
                     </li>
                     <li class="skills__item">
-                        <span><span class="color-mockito">Mock</span>ito</span>
+                        <span class="skills__item_six"><span class="color-mockito">Mock</span>ito</span>
                         Mockito
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/Testcontainers.svg" alt=""></span>
+                        <span class="skills__item_two"><img src="./dist/img/Testcontainers.svg" alt=""></span>
                         Testcontainers
                     </li>
                     <li class="skills__item">
-                        <span><img src="./dist/img/python.svg" alt=""></span>
+                        <span class="skills__item_two"><img src="./dist/img/python.svg" alt=""></span>
                         Python
                     </li>
                 </ul>
+                <button id="skills-button" class="skills__button">show all</button>
             </article>
             <hr>
             <article class="experience about__container">
                 <h4 class="title">experience</h4>
-                <ul class="experience__list">
+                <ul class="experience__list experience__list_bordered">
                     <li class="experience__item">
                         <span class="experience__image">
                             <span class="experience__image-circle">
@@ -285,8 +288,8 @@
         <div class="horizon"></div>
         <section class="section portfolio" id="portfolio">
             <h2 class="section-title">my <span class="color-yellow">works</span></h2>
-            <figure id="portfolio-first-card" class="card card_lower">
-                <picture class="card__image card__image_rotate-right">
+            <figure id="portfolio-first-card" class="card card_lower ">
+                <picture class="card__image">
                     <source media="(max-width: 576px)" srcset="dist/img/cards/SimpleTexting_mobile.webp" type="image/webp">
                     <source media="(max-width: 576px)" srcset="dist/img/cards/SimpleTexting_mobile.webp" type="image/webp">
                     <source srcset="dist/img/cards/SimpleTexting.webp" type="image/webp">
@@ -307,7 +310,7 @@
                     </p>
                 </figcaption>
             </figure>
-            <figure class="card card_upper">
+            <figure id="portfolio-second-card" class="card  card_upper">
                 <picture class="card__image">
                     <source media="(max-width: 576px)" srcset="dist/img/cards/GTPayments_mobile.webp" type="image/webp">
                     <source media="(max-width: 576px)" srcset="dist/img/cards/GTPayments_mobile.webp" type="image/webp">
@@ -331,7 +334,7 @@
                     </p>
                 </figcaption>
             </figure>
-            <figure class="card card_nordstorm card_lower">
+            <figure id="portfolio-third-card" class="card  card_nordstorm card_lower">
                 <picture class="card__image card__image">
                     <source media="(max-width: 576px)" srcset="dist/img/cards/Nordstorm_mobile.webp" type="image/webp">
                     <source media="(max-width: 576px)" srcset="dist/img/cards/Nordstorm_mobile.webp" type="image/webp">
@@ -355,8 +358,8 @@
                     </p>
                 </figcaption>
             </figure>
-            <figure class="card card_upper">
-                <picture class="card__image card__image_rotate-left">
+            <figure id="portfolio-fourth-card" class="card  card_upper">
+                <picture class="card__image">
                     <source media="(max-width: 576px)" srcset="dist/img/cards/Choreograph_mobile.webp" type="image/webp">
                     <source media="(max-width: 576px)" srcset="dist/img/cards/Choreograph_mobile.webp" type="image/webp">
                     <source srcset="dist/img/cards/Choreograph.webp" type="image/webp">

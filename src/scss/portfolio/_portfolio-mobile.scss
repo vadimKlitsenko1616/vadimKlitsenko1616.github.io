@@ -6,6 +6,8 @@
   grid-auto-rows: max-content;
   grid-gap: 50px;
   margin-bottom: 80px;
+  width: 100vw;
+  overflow-x: hidden;
 
   .section-title::after {
     content: "portfolio"
@@ -22,20 +24,18 @@
     border-radius: 10px;
     overflow: hidden;
     background-color: $color-grey-dark;
+    opacity: 0;
+    transition: opacity 1s;
+
+    &_visible {
+      opacity: 1;
+    }
 
     &__image {
       display: block;
       transform: translate(35%, 35%) scale(1.5);
       opacity: .4;
       transition: transform .5s;
-
-      &_rotate-right {
-        transform: rotate(20deg) translate(35%, 50%) scale(1.6);
-      }
-
-      &_rotate-left {
-        transform: rotate(-20deg) translate(40%, 40%) scale(1.6);
-      }
 
       img {
         width: 100%;

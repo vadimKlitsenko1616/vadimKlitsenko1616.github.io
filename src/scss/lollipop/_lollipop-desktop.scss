@@ -1,5 +1,5 @@
 .lollipops {
-  max-width: 35%;
+  max-width: 30%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -8,5 +8,11 @@
   &__item {
     font-size: 10px;
     cursor: default;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .lollipops {
+    flex-direction: column;
   }
 }

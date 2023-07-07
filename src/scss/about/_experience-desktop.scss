@@ -1,6 +1,11 @@
 @import "../variables";
 
 .experience {
+  padding: 0 56px;
+
+  &__list_bordered {
+    border-right: 2px solid $color-yellow;
+  }
 
   .education-title {
     text-align: center;

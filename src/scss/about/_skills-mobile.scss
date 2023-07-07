@@ -7,40 +7,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 1fr;
     grid-column-gap: 10px;
-    grid-row-gap: 25px;
     width: 100%;
-    max-height: 560px;
-    transition: max-height 1s, height 1s;
-    overflow-y: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-
-    &::before, &::after {
-      grid-column: 1/3;
-      content: "";
-      position: sticky;
-      left: 0;
-      width: 100%;
-      height: 100px;
-    }
-
-    &::before {
-      top: -10px;
-      background: linear-gradient(to bottom, $color-black 0%, transparent 100%);
-    }
-
-    &::after {
-      bottom: -10px;
-      background: linear-gradient(to top, $color-black 0%, transparent 100%);
-    }
-
-    &_active {
-      max-height: 100%;
-    }
+    max-height: 100%;
+    transition: max-height 1s;
   }
 
   &__item {
@@ -49,8 +18,49 @@
     align-items: center;
     flex-direction: column;
     gap: 15px;
+    padding-bottom: 25px;
     font-weight: 300;
     text-transform: uppercase;
+    transition: opacity .3s;
+
+    &:nth-child(9),
+    &:nth-child(10),
+    &:nth-child(11),
+    &:nth-child(12),
+    &:nth-child(13),
+    &:nth-child(14),
+    &:nth-child(15),
+    &:nth-child(16),
+    &:nth-child(17),
+    &:nth-child(18),
+    &:nth-child(19),
+    &:nth-child(20),
+    &:nth-child(21),
+    &:nth-child(22),
+    &:nth-child(23) {
+      display: none;
+      opacity: 0;
+    }
+
+    &_visible {
+      opacity: 1 !important;
+    }
+
+    &_six {
+      background: radial-gradient(closest-side, $color-black 85%, transparent 86%, transparent 100%), conic-gradient($color-yellow 100%, $color-grey 0);
+    }
+    &_five {
+      background: radial-gradient(closest-side, $color-black 85%, transparent 86%, transparent 100%), conic-gradient($color-yellow 90%, $color-grey 0);
+    }
+    &_four {
+      background: radial-gradient(closest-side, $color-black 85%, transparent 86%, transparent 100%), conic-gradient($color-yellow 75%, $color-grey 0);
+    }
+    &_three {
+      background: radial-gradient(closest-side, $color-black 85%, transparent 86%, transparent 100%), conic-gradient($color-yellow 65%, $color-grey 0);
+    }
+    &_two {
+      background: radial-gradient(closest-side, $color-black 85%, transparent 86%, transparent 100%), conic-gradient($color-yellow 55%, $color-grey 0);
+    }
 
     & > span {
       display: flex;
@@ -60,8 +70,6 @@
       height: 96px;
       box-sizing: border-box;
       border-radius: 50%;
-      background: radial-gradient(closest-side, $color-black 85%, transparent 86%, transparent 100%),
-      conic-gradient($color-yellow 75%, $color-grey 0);
       font-size: 14px;
       font-weight: 600;
 
@@ -72,11 +80,18 @@
   }
 
   &__button {
+    grid-column: 1/3;
     margin: 40px 0;
     align-self: center;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     color: $color-yellow;
+    opacity: 1;
+    transition: opacity .3s;
+
+    &_hidden {
+      opacity: 0;
+    }
   }
 }
