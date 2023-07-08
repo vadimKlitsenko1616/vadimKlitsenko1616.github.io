@@ -25,3 +25,29 @@
     max-height: 0;
   }
 }
+
+.modal {
+  position: fixed;
+  top: -200px;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 46px 20px rgba(0,0,0,0.75);
+  background-color: $color-yellow;
+  box-sizing: border-box;
+  border-radius: 30px;
+  min-height: 30px;
+  padding: 10px 20px;
+  width: 80%;
+  opacity: 0;
+  transition: top .5s, opacity .6s;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+
+  &_visible {
+    top: 30px;
+    opacity: 1;
+  }
+}

@@ -6,3 +6,16 @@
 @import "portfolio/portfolio-desktop";
 @import "lollipop/lollipop-desktop";
 @import "contact/contact-desktop";
+
+.modal {
+  top: -300px;
+  left: auto;
+  right: 50px;
+  width: auto;
+  min-width:  min(400px, 15vw);
+  transition: top .5s, opacity .6s;;
+
+  &_visible {
+    top: 20px;
+  }
+}
