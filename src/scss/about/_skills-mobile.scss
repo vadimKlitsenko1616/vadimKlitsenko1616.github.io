@@ -47,7 +47,7 @@
     }
 
     &_six {
-      background: radial-gradient(closest-side, $color-black 85%, transparent 86%, transparent 100%), conic-gradient($color-yellow 100%, $color-grey 0);
+      background: radial-gradient(closest-side, $color-black 85%, transparent 86%, transparent 100%), $color-yellow;
     }
     &_five {
       background: radial-gradient(closest-side, $color-black 85%, transparent 86%, transparent 100%), conic-gradient($color-yellow 90%, $color-grey 0);
